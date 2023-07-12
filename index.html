@@ -1,0 +1,351 @@
+<!-- Los comentarios a lo largo del codigo son muy importantes nos ayudan  -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Conocerte a ti mismo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Oswald"
+    }
+
+    body {
+      font-family: "Open Sans"
+    }
+  </style>
+</head>
+
+<body class="w3-light-grey">
+
+  <!-- Navigation bar with social media icons -->
+
+
+  <div class="w3-bar">
+    <a href="#" class=" w3-button"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class=" w3-button"><i class="fa fa-instagram"></i></a>
+    <a href="#" class=" w3-button"><i class="fa fa-snapchat"></i></a>
+    <a href="#" class=" w3-button"><i class="fa fa-flickr"></i></a>
+    <a href="#" class=" w3-button"><i class="fa fa-twitter"></i></a>
+    <a href="#" class=" w3-button"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class=" w3-button w3-right"><i class="fa fa-search"></i></a>
+  </div>
+
+  <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+  <div class="w3-content">
+
+    <!-- Header -->
+    <header class="header">
+      <h1 class="title"><b>Conocete a ti mismo</b></h1>
+      <h5>Bienvenidos a <span class="menssagge">Conocete a ti mismo</span></h5>
+    </header>
+
+    <!-- Image header -->
+    <header>
+      <img class="image-header" src="img/Pensando.jpg" alt="Fashion Blog">
+      <div class="">
+        <h1 class=""><b>!Esperamos que esta guía te ayude a conocerte mejor para que
+            sigas avanzando¡</b></h1>
+      </div>
+    </header>
+
+    <!-- Grid -->
+    <div class="w3-row w3-padding w3-border">
+
+      <!-- Blog entries -->
+      <div class="w3-col l8 s12">
+
+        <!-- Blog entry -->
+        <div class="w3-container w3-white w3-margin w3-padding-large">
+          <div class="w3-center">
+            <h3>1. Haz una lista de tus Puntos Fuertes y tus Puntos débiles</h3>
+            </h5>
+          </div>
+
+          <div class="w3-justify">
+            <img src="/img/Analizarse.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+            <p>
+            <ol>
+              <li>
+                ¡Empecemos! Coge una hoja de papel o crea un documento de texto en tu ordenador. Haz dos
+                columnas, Puntos fuertes y Puntos débiles.
+              </li>
+
+              <li>
+                Primero escribe absolutamente todo lo que te viene a la cabeza sin juzgarlo.
+              </li>
+
+              <li>
+                termines analiza cada una de tus respuestas preguntándote si cada fortaleza o debilidad que has
+                apuntado es realmente cierta o es un prejuicio que tienes sobre ti mismo.
+              </li>
+            </ol>
+            </p>
+
+            <p class="w3-left">
+              <button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i
+                    class="fa fa-thumbs-up"></i> Like</b>
+              </button>
+            </p>
+            <p class="w3-clear"></p>
+            <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="img/MLR_Freya.webp" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Freya <span class="w3-opacity w3-medium">May 3, 2006, 6:32 PM</span></h4>
+                <p>Mi Dios norico favorito es Loki </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+
+
+        <!-- Blog entry -->
+        <div class="w3-container w3-white w3-margin w3-padding-large">
+          <div class="w3-center">
+            <h3>2. Haz una lista de tus pasiones</h3>
+          </div>
+
+          <div class="w3-justify">
+            <img src="img/pasiones.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
+            <p>
+            <ol>
+              <li>
+                Haz otra lista pero esta vez escribe todo aquello que te motiva, te apasiona, te divierte, aquello que
+                te hace disfrutar de verdad en la vida, escribe todo lo que se te ocurra, ¡ya!</li>
+
+              <li>
+                Otra vez analiza lo que has escrito para saber si realmente es lo que a ti te apasiona o es lo que
+                crees que debería apasionarte.</li>
+
+              <li>
+                Pista: si tienes alguna duda sobre si algo te motiva realmente o no, seguramente significa que tu
+                motivación no es auténtica.</li>
+            </ol>
+            </p>
+            <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i
+                    class="fa fa-thumbs-up"></i> Like</b></button></p>
+          </div>
+
+          <div class="w3-container w3-white w3-margin w3-padding-large">
+            <div class="w3-center">
+              <h3>3. Analiza las distintas aéreas de tu vida</h3>
+            </div>
+
+            <div class="w3-justify">
+              <img src="img/areas.jpeg" alt="Runway" style="width:100%" class="w3-padding-16">
+              <p>
+                ¿Qué sientes sobre las distintas partes de tu vida? Si hay alguna área en la que sientes que no estás
+                consiguiendo lo que realmente te gustaría conseguir probablemente te venga bien conocerte mejor a ti
+                mismo.</br>
+                </br>
+                Te propongo una serie de preguntas sobre estas 5 aéreas:
+              <ol>
+                <li>
+                  Felicidad<br>
+                  ¿Cómo defines tú la felicidad?<br>
+                  ¿En qué periodo o periodos de tu vida has sido más feliz? ¿Por qué?<br>
+                  ¿Eres feliz ahora mismo? ¿Por qué?<br>
+                  ¿De qué logros personales estas orgulloso/a? ¿Por qué?<br>
+                </li><br>
+
+                <li>
+
+                  Social<br>
+                  ¿Cómo defines un amigo o amiga?<br>
+                  ¿Qué cualidades debe tener una persona para que disfrutes pasando el tiempo con ella?<br>
+                  ¿Disfrutas con tus amigos y amigas o sigues con ellos porque no encuentras el tipo de personas con las
+                  que te gustaría realmente tener una amistad? ¿Por qué?<br>
+                  ¿Te sientes solo? ¿Por qué?<br>
+                  ¿Buscas activamente conocer nuevas personas o esperas que tu vida, trabajo, estudios te lleven a
+                  conocer nuevas personas?<br>
+                  ¿Qué mejorarías respecto a tus habilidades sociales? (ser extrovertido, autentico, escuchar mejor,
+                  saber romper el hielo, etc.<br>
+                </li><br>
+
+                <li>
+                  Pareja<br>
+                  Si no estás en una relación…<br>
+
+                  Describe específicamente las características esenciales de tu pareja ideal.<br>
+                  ¿Qué estás haciendo para encontrar a la persona que acabas de describir?<br>
+                  ¿Crees que tienes las cualidades que tu pareja ideal buscaría en su propia pareja?<br>
+                  ¿Cómo te sentirías si tuvieras que vivir el resto de tu vida sin pareja? ¿Por qué?<br>
+                  Si ya estás en una relación…<br>
+                  ¿Estás plenamente satisfecho con tu relación? ¿Por qué?<br>
+                  ¿Qué cualidades de tu pareja te gustan? ¿Por qué?<br>
+                  ¿Qué te gustaría que tu pareja cambiara? ¿Por qué?<br>
+                  ¿Crees que aportas suficiente a la relación?<br>
+                  ¿Te has planteado alguna vez terminar la relación? ¿Por qué?
+                </li>
+                <br>
+
+                <li>
+                  Emocional<br>
+                  ¿Cómo defines el amor?<br>
+                  ¿Qué emociones negativas sientes normalmente? ¿Por qué?<br>
+                  ¿Cómo defines el miedo?<br>
+                  ¿Qué es lo que te causa más miedo? ¿Por qué?<br>
+                  ¿Puedes reconocer y controlar tus emociones o te dejar llevar por ellas?<br>
+                </li>
+                <br>
+
+                <li>
+                  Carrera<br>
+                  ¿Cómo defines la palabra trabajo?<br>
+                  ¿Estás satisfecho con tu ocupación actual?<br>
+                  ¿Sientes que tus habilidades están siendo bien usadas?<br>
+                  ¿Cómo escogiste dedicarte a tu profesión o carrera actual?<br>
+                  ¿Cómo llegaste al trabajo que tienes actualmente?<br>
+                  ¿Te dedicarías a otra cosa si supieras sin duda que podrías ganar el mismo dinero que ganas
+                  actualmente?<br>
+                </li>
+                <br>
+
+                <li>
+                  Dinero<br>
+                  ¿Te gustaría ganar más dinero? ¿Por qué?<br>
+                  ¿Crees que podrías ganar 10 veces lo que ganas ahora? ¿Por qué? ¿Por qué no?<br>
+                  ¿Qué representa el dinero para ti?<br>
+                  ¿Ahorras dinero a final de mes?<br>
+                </li>
+                <br>
+
+              </ol>
+              </p>
+              <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i
+                      class="fa fa-thumbs-up"></i> Like</b></button></p>
+            </div>
+
+            <div class="w3-container w3-white w3-margin w3-padding-large">
+              <div class="w3-center">
+                <h3>4. ¿Cuál es tu propósito en la vida?</h3>
+                </h5>
+              </div>
+
+              <div class="w3-justify">
+                <img src="/img/proposito de vida.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+                <p>
+                  Un propósito es el motivo principal que mueve la vida de una persona.
+                <ol>
+                  <li>
+                    ¿Tienes una razón para levantarte cada mañana o sientes que tu vida funciona en piloto automático?.
+                  </li>
+                  <li>
+                    Si sientes que tu vida se escapa de tus manos quizás es hora que crees tu propio propósito.
+                  </li>
+                </ol>
+                </p>
+
+                <div class="w3-container w3-white w3-margin w3-padding-large">
+                  <div class="w3-center">
+                    <h3>5. Pide a alguien una descripción sincera sobre ti</h3>
+                    </h5>
+                  </div>
+
+                  <div class="w3-justify">
+                    <img src="/img/descripcion.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+                    <p>
+                    <ol>
+                      <li>
+                        Pide a un amigo o amiga que te hable sobre cómo te ve él o ella sin cortarse ni un pelo.
+                        Asegúrale que quieres saber toda la verdad y que no te tomaras mal nada de lo que digan. Si
+                        haces esto prepárate para recibir una buena crítica pero analiza bien los comentarios ya que
+                        podrías descubrir algún aspecto sobre ti mismo que habías pasado por alto.
+                      </li>
+                    </ol>
+                    </p>
+
+                    <div class="w3-container w3-white w3-margin w3-padding-large">
+                      <div class="w3-center">
+                        <h3>6. Escribe un diario</h3>
+                        </h5>
+                      </div>
+
+                      <div class="w3-justify">
+                        <img src="/img/diario.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+                        <p>
+                        <ol>
+                          <li>
+                            Utiliza un diario para reflexionar sobre todo lo que te ha sucedido durante el día e
+                            intentar a si conocerte mayor a ti mismo.
+                          </li>
+                          <br>
+                          <li>
+                            Sigue haciéndote preguntas cada día que te lleven cada día a mejorar un poco más a y pronto
+                            te darás cuenta que estás dando cada día un paso más hacia una vida más feliz.
+                          </li>
+                          <br>
+                          <li>
+                            Haz un mundo mejor haciéndote feliz a ti mismo/a primero.
+                          </li>
+                        </ol>
+                        </p>
+
+                        <!-- Subscribe Modal -->
+                        <div id="subscribe" class="w3-modal w3-animate-opacity">
+                          <div class="w3-modal-content" style="padding:32px">
+                            <div class="w3-container w3-white">
+                              <i onclick="document.getElementById('subscribe').style.display='none'"
+                                class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+                              <h2 class="w3-wide">SUBSCRIBE</h2>
+                              <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                              <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+                              <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"
+                                onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <footer class="w3-container " style="padding:32px">
+                          <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i
+                              class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+                        </footer>
+
+                        <script>
+                          // Toggle between hiding and showing blog replies/comments
+                          document.getElementById("myBtn").click();
+                          function myFunction(id) {
+                            var x = document.getElementById(id);
+                            if (x.className.indexOf("w3-show") == -1) {
+                              x.className += " w3-show";
+                            } else {
+                              x.className = x.className.replace(" w3-show", "");
+                            }
+                          }
+
+                          function likeFunction(x) {
+                            x.style.fontWeight = "bold";
+                            x.innerHTML = "✓ Liked";
+                          }
+                        </script>
+
+                        <footer>
+                          <h3>Recursos obtenidos de</h3>
+                          <ul>
+                            <li>https://www.exitopersonal.com/</li>
+                            <li>https://www.pexels.com/</li>
+                          </ul>
+                        </footer>
+
+</body>
+
+</html>
